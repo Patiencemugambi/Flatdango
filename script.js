@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
-  // Get a reference to the films list element
 const filmsList = document.getElementById('films');
 
 // Make a GET request to retrieve the film data
@@ -59,3 +58,5 @@ fetch('http://localhost:3000/films')
   .catch(error => {
     console.log('An error occurred:', error);
   });
+
+
