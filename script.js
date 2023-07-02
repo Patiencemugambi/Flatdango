@@ -23,3 +23,39 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(error => console.error('Error:', error));
   });
   
+
+
+  // Get a reference to the films list element
+const filmsList = document.getElementById('films');
+
+// Make a GET request to retrieve the film data
+fetch('http://localhost:3000/films')
+  .then(response => response.json())
+  .then(data => {
+    // Iterate over the film data and create list items
+    const films = data.map(film => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('film', 'item'); // Add classes to the list item
+
+      // Create the content for each film
+      listItem.innerHTML = `
+        <img src="${film.poster}" alt="${film.title}" />
+        <div>
+          <h3>${film.title}</h3>
+          <p>${film.description}</p>
+          <p>Showtime: ${film.showtime}</p>
+          <p>Tickets Sold: ${film.tickets_sold}</p>
+        </div>
+      `;
+
+      return listItem;
+    });
+
+    // Append the film list items to the films list element
+    films.forEach(film => {
+      filmsList.appendChild(film);
+    });
+  })
+  .catch(error => {
+    console.log('An error occurred:', error);
+  });
