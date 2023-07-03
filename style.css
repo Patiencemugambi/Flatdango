@@ -9,7 +9,7 @@ h1 {
   #films {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 30px;
     padding: 10px 0;
   }
   
@@ -18,22 +18,85 @@ h1 {
   }
   
   img {
-    height: 150px;
+    height: 280px;
     width: 150px;
     transition: transform 0.3s ease;
-  }
-  
-  .film.item {
-    cursor: pointer;
-  }
-  
-  .film.item.active img {
-    transform: scale(1.3);
+
   }
 
-  #movie-details img{
-    height: 1000px;
-    width: 700px;
+  h3{
+    margin-top: 40px;
+    font-size: 1.5rem;
   }
+
+  
+.film.item {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .film.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+.film.item.active img {
+    transform: scale(1.3);
+    
+  }
+
+.posterclass{
+  box-shadow: 20px 20px 50px grey;
+
+}
+
+
+
+
+
+  #movie-details img{
+    height: 700px;
+    width: 600px;
+
+  }
+
+  #movie-details{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details{
+    margin: 50px;
+  }
+
+
+  #movie-menu {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+
+  #buy-ticket {
+    background-color: #42c0af;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #buy-ticket:hover {
+    background-color: #0056b3;
+  }
+  
+
 
   
