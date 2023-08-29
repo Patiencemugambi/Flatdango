@@ -1,7 +1,5 @@
 # Flatdango
 
-## By Patience Mugambi
-
 This repository contains a web application called Flatdango that allows users to purchase movie tickets from Flatiron Movie Theater.
 
 ## Table of Contents
@@ -58,5 +56,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author's Info
 - LinkedIn: [Patience Mugambi](https://www.linkedin.com/feed/)
+- 
 
 
